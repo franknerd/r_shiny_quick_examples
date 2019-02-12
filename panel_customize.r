@@ -84,7 +84,8 @@ ui <- fluidPage(
       h5(textOutput("description")), # Fifth level header: Description
       
       h3("Data table"),     # Third level header: Data table
-      DT::dataTableOutput(outputId = "moviestable"),width=7
+      DT::dataTableOutput(outputId = "moviestable"),
+      width=7
     )
   )
 )
