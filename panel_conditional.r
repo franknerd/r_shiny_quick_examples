@@ -85,7 +85,7 @@ ui <- fluidPage(
       
       h5(textOutput("description")), # Fifth level header: Description
       
-      conditionalPanel("input.show_data == TRUE", h3("Data table")),     # Third level header: Data table
+      conditionalPanel(condition = "input.show_data == true", h3("Data table")),     # Third level header: Data table
       DT::dataTableOutput(outputId = "moviestable"),
       
       width = 7
